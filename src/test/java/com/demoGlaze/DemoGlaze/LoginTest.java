@@ -47,7 +47,15 @@ public class LoginTest
 				String objectName = testData.get(i+2).toString();
 				key.click1(objectName);
 			}
-			
+			if(testData.get(i).equals("logout")) 
+			{
+				String objectName = testData.get(i+2).toString();
+				key.logout(objectName);
+			}
+			if(testData.get(i).equals("close")) 
+			{
+				key.close();
+			}
 		}
 	}
 }
